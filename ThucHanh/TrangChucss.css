@@ -1,0 +1,238 @@
+body{
+    margin: auto;
+    border: 1px solid;
+    padding: 0px 5px;
+    display: grid;
+    grid-template: auto;
+    font-family: Helvetica,
+    arial, sans-serif;
+    width: 1024px;
+    font-size: 1.2em;
+}
+.header-content {
+    height: 100px;
+    background-image: url(D:/images/header.png);
+    background-size: cover;
+    color: #ed4190;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc7c8;
+    position: relative;
+}
+
+.img1 {
+    position: absolute;
+    height: 100px;
+    top: -30px;
+    animation-duration: 3s;
+    animation-name: moveImage1;
+    left: 30%;
+}
+
+.img2 {
+    position: absolute;
+    height: 70px;
+    top: -5px;
+    animation-duration: 3s;
+    animation-name: moveImage2;
+    left: 45%;
+}
+
+.img3 {
+    position: absolute;
+    height: 80px;
+    top: 0px;
+    animation-duration: 3s;
+    animation-name: moveImage3;
+    left: 63%;
+}
+
+@keyframes moveImage1 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+@keyframes moveImage2 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 45%;
+    }
+}
+@keyframes moveImage3 {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 63%;
+    }
+}
+/*Nav*/
+.nav-row{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-search{
+    padding: 2px 12px;
+    margin: 3px;
+}
+.icon{
+    padding: 2px 4px;
+    margin: 1px;
+    max-width: 30px;
+    color: #fff;
+    background-color: #cddc39;
+    border: none;
+}
+.input-search{
+    margin: 3px;
+    border: none;
+    border-radius: 2px;
+    padding: 2px 4px;
+    width: 160px;
+    height: 20px;
+    box-shadow: inset 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+.text-nav{
+    text-decoration: none;
+    margin: 3px;
+    border: 1px soild #fff;
+    border-radius: 2px;
+    padding: 2px 4px;
+    color: #ed4190;
+    background-color: #ffffff80;
+    font-size: 17px;
+    box-shadow: inset 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+.text-nav:hover{
+    color: #fff;
+    background-color: #ed4190;
+}
+.icon:hover {
+    color: #ed4190;
+}
+/*Main*/
+.main-row{
+    display: grid;
+    grid-template: auto;
+}
+.main-row1{
+    display: grid;
+    grid-template: auto;
+}
+.main-content1{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.main-image1{
+    border-radius: 2px;
+}
+.main-text{
+    margin: 4px;
+    margin-top: 0px;
+}
+
+.main-row2{
+    display: grid;
+    grid-template: auto;
+}
+.main-content2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-row3{
+    display: grid;
+    grid-template: auto;
+}
+.main-content3{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.main-row4{
+    display: grid;
+    grid-template: auto;
+}
+.main-content4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+h2{
+    font-weight: 300px;
+    color: #F90B6D;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 20px;
+    color: #F90B6D;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.main-title::after{
+    content: "";
+    width: 200px;
+    height: 3px;
+    transform: skewX(-12deg) translateX(50%);
+    background-image: radial-gradient(#cddc39, #fff);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+h1{
+    font-size: 28px;
+    color: #F90B6D;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 34px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    margin: 10px auto;
+}
+.service{
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.footer-row{
+    margin: 2px;
+    border: 1px solid #ccc7c8;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+}
+.fab{
+    color: #ed4190;
+}
+.gototop{
+    background-image: url('../images/top.png');
+    background-size: cover;
+    padding: 10px;
+    color: #ed4190;
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+    bottom: 5px;
+}
