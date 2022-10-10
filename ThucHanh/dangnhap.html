@@ -6,54 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng Nhập</title>
     <link rel="shortcut icon" href="./data/images/favicon.ico" type="vnd.microsoft.icon">
+    <link rel="stylesheet" href="./dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="header-row">
         <a href=""> <img src="./data/images/logo.png" alt="" id="logo"></a>
-         <nav>
-            <a href="./trangchu.html">Trang chủ</a>
-            <a href="./gioithieu.html">Giới thiệu</a>
-            <a href="./sanpham.html">Sản phẩm</a>
-            <a href="./tintuc.html">Tin tức</a>
-            <a href="./dangnhap.html">Đăng nhập</a>
-            <a href="./dangky.html">Đăng ký</a>
-            <a href="./lienhe.html">Liên hệ</a>
+        <img class="header-img1" src="./data/images/header-img1.png" alt="">
+        <img class="header-img2" src="./data/images/header-img2.png" alt="">
+        <img class="header-img3" src="./data/images/header-img3.png" alt="">
+         <nav class="nav-row">
+            <div class="nav-content">
+                <a class="text-nav" href="./trangchu.html">Trang chủ</a>
+                <a class="text-nav" href="./gioithieu.html">Giới thiệu</a>
+                <a class="text-nav" href="./sanpham.html">Sản phẩm</a>
+                <a class="text-nav" href="./tintuc.html">Tin tức</a>
+                <a class="text-nav" href="./dangnhap.html">Đăng nhập</a>
+                <a class="text-nav" href="./dangky.html">Đăng ký</a>
+                <a class="text-nav" href="./lienhe.html">Liên hệ</a>
+            </div>
+            <div class="nav-search">
+                <input class="input-search" type="text" placeholder="Nhập nội dung cần tìm"><a href="" class="icon"><i class="search-btn fas fa-search"></i></a>
+                <a href="" class="icon"><i class="shop-btn icon fas fa-shopping-cart"></i></a>
+            </div>
          </nav>
-    </header>
-    <main>
-        <form action="" method="post" enctype="application/x-www-form-urlencoded">
-            <fieldset style="display: inline-block;">
-                <legend><strong>ĐĂNG NHẬP</strong></legend>
-                <table>
-                    <tr>
-                        <th colspan="2"> <img style="text-align: center; width: 30%;" src="./data/images/dangnhap/userlogin.png" alt=""></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th style="text-align: left;"><label for="email">Email:</label></th>
-                        <td><input type="text" name="email" placeholder="Nhập email"></td>
-                    </tr>
-                    <tr>
-                        <th style="text-align: left;" ><label for="pws">Mật khẩu:</label></th>
-                        <td><input type="password" name="psw" placeholder="Nhập mật khẩu"></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td>
-                            <input type="reset" value="Hủy">
-                            <input type="submit" value="Đăng nhập">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th style="text-align: left;" colspan="2">Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox" name="remember"> Ghi nhớ cho lần đăng nhập sau</th>
-                        <th></th>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
+     </header>
+    <main id="main-row">
+        <div class="design-table">
+            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend><h1>ĐĂNG NHẬP</h1></legend>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <img style="width: 40%;" src="./data/images/dangnhap/userlogin.png" alt=""></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="email"><i class="fa fa-envelope"></i></label>
+                                <input type="text" name="email" placeholder="Nhập email">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="pws"><i class="fa fa-key"></i></label>
+                                <input type="password" name="psw" placeholder="Nhập mật khẩu">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Bạn quên <a style="color: blue;" href="">Mật Khẩu?</a> <input type="checkbox" name="remember"> Ghi nhớ cho lần đăng nhập sau</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Đăng nhập">
+                                <input type="reset" value="Hủy">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
     </main>
-    <footer>
-        <p>&#169; <strong>2021 Bản quyền thuộc về FreeezeVN. <a href="">facebook</a> <a href="">pinterest</a> <a href="#logo">Về Đầu Trang</strong></a></p>
+    <footer id="footer-row">
+        <p>&#169; 2021 Bản quyền thuộc về FreeezeVN. <a href=""><i class="icon-footer fab fa-facebook-f"></i></a> <a href=""><i class="icon-footer fab fa-twitter"></i></a> <a href=""><i class="icon-footer fab fa-pinterest"></i></a> <a class="button-back-to-head" href="#logo"></a>
+        </p>
     </footer>
 </body>
 </html>

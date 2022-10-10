@@ -223,6 +223,7 @@ h3{
     grid-area: footer-cell;
     margin-top: 2px;
     text-align: center;
+    margin-bottom: 4px;
 }
 .icon-footer{
     color: #ed4190;

@@ -143,6 +143,7 @@ h1::after{
     right: 50%;
 }
 h2{
+    text-align: center;
     margin: 5px 0 10px;
     font-size: 24px;
     color: #F90B6D;
@@ -152,14 +153,18 @@ h2{
 }
 section{
     display: flex;
+    border-radius: 5px;
     flex: 1px;
     margin: 3px;
     border: 1px solid #bdd7d9;
+    background-image: linear-gradient(to top,#cddc39 0%,#fff 10%);
 }
 .container{
+    position: relative;
     margin: 4px;
     padding: 3px;
     height: 100%;
+
 }
 #main-row .main-row1,
 #main-row .main-row2,
@@ -184,16 +189,26 @@ section{
     font-size: 18px;
 }
 
-
+.prc-img{
+    text-align: center;
+}
 span{
-    position: absolute;
-    margin: 0 auto;
+   
+
+}
+.design-input{
+    position: relative;
+    text-align: center;
     padding: 0 0;
     bottom: 0px;
+}
+p{
+    
 }
 #footer-row{
     margin-top: 2px;
     text-align: center;
+    margin-bottom: 4px;
 }
 .icon-footer{
     color: #ed4190;
